@@ -1,0 +1,8 @@
+../Src/main.c:19:6:configure_ppm_timer3	1
+../Src/main.c:40:6:configure_pwm_timer4	1
+../Src/main.c:63:6:SystemClock_Config	4
+../Src/main.c:94:6:USART2_Init	1
+../Src/main.c:124:6:USART2_SendChar	2
+../Src/main.c:129:6:USART2_SendString	2
+../Src/main.c:135:6:USART2_ReceiveChar	3
+../Src/main.c:142:5:main	14

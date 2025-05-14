@@ -1,0 +1,8 @@
+../Src/main.c:19:6:configure_ppm_timer3	4	static
+../Src/main.c:40:6:configure_pwm_timer4	4	static
+../Src/main.c:63:6:SystemClock_Config	4	static
+../Src/main.c:94:6:USART2_Init	4	static
+../Src/main.c:124:6:USART2_SendChar	16	static
+../Src/main.c:129:6:USART2_SendString	16	static
+../Src/main.c:135:6:USART2_ReceiveChar	16	static
+../Src/main.c:142:5:main	16	static
