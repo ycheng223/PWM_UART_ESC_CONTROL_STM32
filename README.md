@@ -1,4 +1,4 @@
-Baremetal implementation that bridges communication with VESC firmware to enable BLDC motor control using a computer through USB and the STM32F411CE Nucleo Board. Uses UART2 to receive commands from a computer via USB and maps it to two PWM signals used by VESC to control the RPM of the BLDC motors.
+Baremetal implementation that bridges communication with VESC firmware to enable BLDC motor control using a computer through USB and a STM32F411CE Nucleo Board (https://www.st.com/en/evaluation-tools/nucleo-f411re.html). Uses UART2 on the NUCLEO to receive keystroke input from a computer via USB and maps it to two PWM signals used by VESC to control the RPM of two BLDC motors. The ratio of these RPMs then determines the direction of the robot.
 
 Keyboard inputs are mapped as:
 
