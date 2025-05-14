@@ -1,3 +1,5 @@
+Baremetal implementation that bridges communication with VESC firmware to enable BLDC motor control using a computer through USB and the STM32F411CE Nucleo Board. Uses UART2 to receive commands from a computer via USB and maps it to two PWM signals used by VESC to control the RPM of the BLDC motors.
+
 Keyboard inputs are mapped as:
 
 W = Forward
@@ -13,8 +15,6 @@ C = Reverse Right
 ' ' = Standby
 
 For ease of use, recommend mapping the keyboard inputs to a wireless gamepad or joystick using a keyboard emulator like Joy2Key.
-
-Baremetal implementation that bridges communication with VESC firmware to enable BLDC motor control using a computer through USB and STM32. Uses UART to communicate with the computer via USB and maps commands to PWM signal which are then transmitted to the ESC.
 
 Requires PUTTY (for serial communication with USB port) and VESC to interface with the ESC. The ESC should have PPM input pins for two motors.
 
