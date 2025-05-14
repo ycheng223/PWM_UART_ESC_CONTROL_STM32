@@ -1,10 +1,13 @@
-Baremetal implementation that bridges communication with VESC firmware to enable BLDC motor control using a computer through USB and a STM32F411CE Nucleo Board (https://www.st.com/en/evaluation-tools/nucleo-f411re.html). Uses UART2 on the NUCLEO to receive keystroke input from a computer via USB and maps it to two PWM signals used by VESC to control the RPM of two BLDC motors. The ratio of these RPMs then determines the direction of the robot.
+Baremetal implementation that bridges communication with VESC firmware to enable BLDC motor control using a computer through USB and a STM32F411CE Nucleo Board (https://www.st.com/en/evaluation-tools/nucleo-f411re.html). Uses USART2 on the NUCLEO to receive keystroke input from a computer via USB and maps it to two PWM signals used by VESC to control the rpm of two BLDC motors. The ratio of these RPMs then determines the direction of heading.
 
-PWM waveforms are generated from morpho pins PC6 and PB6 on the STM32F411CE so these should be wired to the PPM/PWM pins on the ESC.
+PWM waveforms are generated from morpho pins PC6 and PB6 on the STM32F411CE and should be wired to the PPM/PWM pins on the ESC. For the DV6S ESC pictured, this requires PH2.0MM JST connectors on the ESC side and Dupont female connectors on the STM32 side.
 
-Pins PA2 (TX) and PA3 (RX) are also used for USART2.
+![image0](https://github.com/user-attachments/assets/ed18ae16-3a34-4daf-923c-4338748e437d)
+![image1](https://github.com/user-attachments/assets/72610c16-28c4-4567-8a9d-8bed2a337871)
 
-Keyboard inputs are mapped as:
+Pins PA2 (TX) and PA3 (RX) are used for USART2.
+
+**Keyboard inputs are mapped as:**  
 
 W = Forward  
 S = Reverse  
