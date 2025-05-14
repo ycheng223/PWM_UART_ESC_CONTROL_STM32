@@ -2,17 +2,17 @@ Baremetal implementation that bridges communication with VESC firmware to enable
 
 Keyboard inputs are mapped as:
 
-W = Forward
-S = Reverse
-A = Left
-D = Right
-Q = Forward Left
-E = Forward Right
-Z = Reverse Left
-C = Reverse Right
-[ = Speed Up
-] = Slow Down
-' ' = Standby
+W = Forward  
+S = Reverse  
+A = Left  
+D = Right  
+Q = Forward Left  
+E = Forward Right  
+Z = Reverse Left  
+C = Reverse Right  
+[ = Speed Up  
+] = Slow Down  
+' ' = Standby  
 
 For ease of use, recommend mapping the keyboard inputs to a wireless gamepad or joystick using a keyboard emulator like Joy2Key.
 
