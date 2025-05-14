@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f0d9774c-8225-4552-bf1b-25ce14ed8478)Baremetal implementation that bridges communication with VESC firmware to enable BLDC motor control using a computer through USB and STM32. Uses UART to communicate with the computer via USB and maps commands to PWM signal which are then transmitted to the ESC.
+Baremetal implementation that bridges communication with VESC firmware to enable BLDC motor control using a computer through USB and STM32. Uses UART to communicate with the computer via USB and maps commands to PWM signal which are then transmitted to the ESC.
 
 Requires PUTTY (for serial communication with USB port) and VESC to interface with the ESC. The ESC should have PPM input pins for two motors.
 
