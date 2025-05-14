@@ -1,9 +1,6 @@
 Baremetal implementation that bridges communication with VESC firmware to enable BLDC motor control using a computer through USB and a STM32F411CE Nucleo Board (https://www.st.com/en/evaluation-tools/nucleo-f411re.html). Uses USART2 on the NUCLEO to receive keystroke input from a computer via USB and maps it to two PWM signals used by VESC to control the rpm of two BLDC motors. The ratio of these RPMs then determines the direction of heading.
 
-PWM waveforms are generated from morpho pins PC6 and PB6 on the STM32F411CE and should be wired to the PPM/PWM pins on the ESC. For the DV6S ESC pictured, this (ideally) requires PH2.0MM JST connectors on the ESC side and Dupont female connectors on the STM32 side.
-
-![](https://github.com/user-attachments/assets/ed18ae16-3a34-4daf-923c-4338748e437d)
-![](https://github.com/user-attachments/assets/72610c16-28c4-4567-8a9d-8bed2a337871)
+PWM waveforms are generated from morpho pins PC6 and PB6 on the STM32F411CE and should be wired to the PPM/PWM pins on the ESC. For a DV6S ESC, this (ideally) requires PH2.0MM JST connectors on the ESC side and Dupont female connectors on the STM32 side. (See bottom of readme for example wiring)
 
 Pins PA2 (TX) and PA3 (RX) are used for USART2.
 
@@ -30,3 +27,7 @@ VESC should be configured to use PPM in App Settings with Control Type Duty Cycl
 ![image](https://github.com/user-attachments/assets/301c3701-9792-4ffe-94b8-05894c9145e6)
 
 ![image](https://github.com/user-attachments/assets/059bc42d-0e93-4d84-8005-6cdc22be5d67)
+
+![](https://github.com/user-attachments/assets/ed18ae16-3a34-4daf-923c-4338748e437d)
+
+![](https://github.com/user-attachments/assets/72610c16-28c4-4567-8a9d-8bed2a337871)
