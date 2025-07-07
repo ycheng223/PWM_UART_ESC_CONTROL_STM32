@@ -20,7 +20,7 @@ C = Reverse Right
 
 For ease of use, recommend mapping the keyboard inputs to a wireless gamepad or joystick using a keyboard emulator like Joy2Key.
 
-Requires PUTTY (for serial communication with USB port) and VESC to interface with the ESC. The ESC should have PPM input pins for two motors.
+Requires PUTTY (for serial communication with USB port) and VESC to configure the ESC for PPM/PWM input if it is not hte default. The ESC should have PPM input pins for two motors.
 
 VESC should be configured to use PPM in App Settings with Control Type Duty Cycle
 
